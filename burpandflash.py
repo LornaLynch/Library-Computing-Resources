@@ -28,5 +28,5 @@ while True:
         time.sleep(0.2)
         
 
-# If you have difficulty getting the burp sound to play, try using the line os.system("omxplayer -o local bupr.wav") instead of line 23. 
+# If you have difficulty getting the burp sound to play, try using the line os.system("omxplayer -o local burp.wav") instead of line 23. 
 
