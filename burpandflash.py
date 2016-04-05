@@ -20,13 +20,11 @@ GPIO.setup(27,GPIO.OUT)
 # Set up a loop which runs forever, and plays the burping sound effect and flashes the LED when the jelly baby is squeezed. 
 while True:
     if GPIO.input(3) == False:
-        os.system("omxplayer burp.wav")
+        os.system("omxplayer -o local burp.wav")
         time.sleep(1)
         GPIO.output(27,GPIO.HIGH)
         time.sleep(0.2)
         GPIO.output(27,GPIO.LOW)
         time.sleep(0.2)
         
-
-# If you have difficulty getting the burp sound to play, try using the line os.system("omxplayer -o local burp.wav") instead of line 23. 
 
