@@ -22,9 +22,9 @@ while True:
     if GPIO.input(3) == False:
         os.system("omxplayer burp.wav")
         time.sleep(1)
-        GPIO.output(7,GPIO.HIGH)
+        GPIO.output(27,GPIO.HIGH)
         time.sleep(0.2)
-        GPIO.output(7,GPIO.LOW)
+        GPIO.output(27,GPIO.LOW)
         time.sleep(0.2)
         
 
